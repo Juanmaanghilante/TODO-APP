@@ -1,0 +1,208 @@
+/* estilos TodoCounter */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(14, 15, 16, 0.6);
+   background-image:url('/public/images/alberto.jpg');
+  background-size: cover;
+  background-repeat: repeat; 
+}
+.h1counter {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-weight: 300;
+  color:white;
+}
+
+.h1counter span {
+  font-weight: bold;
+}
+
+/* estilos ToDoSearch */
+.searchdiv {
+  width: 100%;
+  height: 50%;
+  padding: 5px;
+}
+.placeholder {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+
+  border: solid rgb(216, 211, 211) 1px;
+}
+
+.placeholder:focus {
+  outline-color: #4c756f;
+}
+/* .task para  p de todoitem */
+.task {
+  width: 90%;
+  height: auto;
+  overflow-y: scroll;
+  color:white;
+
+}
+.tasks{
+  text-decoration: line-through;
+  text-decoration-color: rgb(220, 3, 24);
+  text-decoration-thickness: 6px
+}
+
+
+.listh1 {
+  font-size: 2rem;
+  color: rgb(243, 236, 236);
+}
+.TodolistSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(207, 200, 200);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: ;
+}
+.listul {
+  font-size: 1.8rem;
+  color: rgb(6, 2, 2);
+  background-color:  rgba(128, 128, 128, 0.2) ;
+
+
+  width: 100%;
+  padding: 20px;
+}
+.listli {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(191, 182, 182, 0.4);
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+
+
+/* estilos TodoItems */
+
+/* estilos TodoButton */
+
+.button1 {
+  background-color: #ff69b4; /* Color de fondo rosa */
+  color: #fff; /* Color de texto blanco */
+  padding: 10px 20px; /* Relleno interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Esquinas redondeadas */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: background-color 0.3s, transform 0.2s;
+}
+.button1 {
+  background-color: #ff1493; /* Color de fondo rosa más oscuro */
+  transform: scale(1.05); /* Escala el botón ligeramente al pasar el mouse */
+  width: 20%;
+  position: relative;
+  left: 35%;
+  top: 10px;
+}
+.tareaterminada {
+  background-color: #e2ebe2; /* Color de fondo verde */
+  color: #151714; /* Color de texto blanco */
+  padding: 10px 10px; /* Relleno interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Esquinas redondeadas */
+
+  font-size: 18px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s;
+
+  width: 35px;
+  height: 35px;
+}
+
+.tareaterminadax{
+  background-color: #0ac21c;
+}
+
+
+
+
+/* Estilo base para el botón de eliminación de tarea */
+.tareaterminada2 {
+  background-color: #f44336; /* Color de fondo rojo */
+  color: #fff; /* Color de texto blanco */
+  padding: 10px 10px; /* Relleno interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Esquinas redondeadas */
+  font-size: 20px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s;
+  width: 36px;
+  height: 36px;
+}
+
+/* Estilo al pasar el mouse por encima */
+.tareaterminada2:hover {
+  background-color: #c20a0a; /* Color de fondo rojo más oscuro al pasar el mouse */
+}
+
+/* Loading Skeletons */
+.pload {
+  color: #d9e7da; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente */
+  text-align: center; /* Alineación del texto */
+  margin-top: 20px; /* Espacio superior para separar del contenido anterior */
+
+  /* Estilo de fuente futurista */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden; /* Ocultar el texto que no se ha escrito aún */
+  white-space: nowrap; /* Evitar saltos de línea */
+
+  animation: writeText 1s steps(10, end) infinite; /* Animación de escritura */
+}
+
+@keyframes writeText {
+  0% {
+    width: 0; /* Iniciar con un ancho de 0 (ningún texto visible) */
+  }
+  100% {
+    width: 100%; /* Llegar al ancho completo (texto completamente escrito) */
+  }
+}
+
+
+
+
+
+
+@media (min-width: 560px) {
+  .searchdiv {
+  }
+}
+
+@media (min-width: 990px) {
+  .searchdiv {
+  }
+}
