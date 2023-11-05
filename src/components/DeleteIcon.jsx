@@ -5,7 +5,7 @@ const DeleteIcon = ({ onDelete }) => {
     <>
       <button type="delete" onClick={onDelete} className="tareaterminada2">
         {" "}
-        <i class="fa-regular fa-trash-can"></i>
+        <i className="fa-regular fa-trash-can"></i>
       </button>
     </>
   );

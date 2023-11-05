@@ -9,7 +9,7 @@ const CompleteIcon = ({ completed, onComplete }) => {
         onClick={onComplete}
       >
         {" "}
-        <i class="fa-solid fa-check"></i>
+        <i className="fa-solid fa-check"></i>
       </button>
     </>
   );

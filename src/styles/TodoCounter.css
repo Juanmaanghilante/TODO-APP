@@ -58,7 +58,28 @@ body {
   text-decoration-color: rgb(220, 3, 24);
   text-decoration-thickness: 6px
 }
+.Modal{
+  /* color: #d1cdcd;
+  font-size: 2rem;
+  box-sizing: border-box;
+border: 1px solid wheat;
+text-align: center;
+margin-top: 2rem;
+width: auto;
+height: 50px; */
+background-color:rgba(32,35,41,.8);
+display: flex;
+justify-content: center;
+align-items: center;
+color: #d6d6d6;
+position: fixed;
+top: 15%;
+left:0%;
+right: 0%;
+bottom: 30%;
 
+
+}
 
 .listh1 {
   font-size: 2rem;
@@ -69,7 +90,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid rgb(207, 200, 200);
+  border: 1px solid rgb(208, 202, 202);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -106,8 +127,8 @@ body {
 /* estilos TodoButton */
 
 .button1 {
-  background-color: #ff69b4; /* Color de fondo rosa */
-  color: #fff; /* Color de texto blanco */
+  background-color: #b1aaad; /* Color de fondo rosa */
+  color: #dacccc; /* Color de texto blanco */
   padding: 10px 20px; /* Relleno interno del botón */
   border: none; /* Sin borde */
   border-radius: 20px; /* Esquinas redondeadas */
@@ -115,14 +136,15 @@ body {
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
   transition: background-color 0.3s, transform 0.2s;
+  z-index: 1;
 }
 .button1 {
   background-color: #ff1493; /* Color de fondo rosa más oscuro */
   transform: scale(1.05); /* Escala el botón ligeramente al pasar el mouse */
   width: 20%;
   position: relative;
-  left: 35%;
-  top: 10px;
+  left: auto;
+  top: auto;
 }
 .tareaterminada {
   background-color: #e2ebe2; /* Color de fondo verde */
@@ -181,6 +203,86 @@ body {
   white-space: nowrap; /* Evitar saltos de línea */
 
   animation: writeText 1s steps(10, end) infinite; /* Animación de escritura */
+}
+/* todo form styles */
+
+form{
+width: 90%;
+max-width: 300px;
+background-color: #d6d6d6;
+padding: 33px 40px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.label-form{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 26px;
+}
+
+textarea{
+background-color: white;
+border: 2px solid black;
+border-radius: 5px;
+box-shadow: 0px 5px 50px rgba(28, 89, 256, 0.7);
+color: #1E1E1F;
+font-size: 20px;
+text-align: center;
+padding: 12px;
+height: 96px;
+width: calc(100% - 20px);
+}
+.todoform-buttoncontainer{
+margin-top: 14px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+/* .Todoform-button{
+cursor: pointer;
+display: inline block;
+font-size: 2px;
+color: black;
+font-weight: 400;
+width: 120px;
+height: 48px;
+border-radius: 2px;
+border: none;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+.Todoform-button--add {
+  background:#109424;
+  box-shadow: 0px 5px 25px rgba(97,218,250,0.5);
+  cursor: pointer;
+  display: inline block;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  width: 120px;
+  height: 2rem;
+  border-radius: 2px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Todoform-button--cancel{
+  background-color: #db0808;
+  cursor: pointer;
+  display: inline block;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  width: 120px;
+  height: 2rem;
+  border-radius: 2px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @keyframes writeText {

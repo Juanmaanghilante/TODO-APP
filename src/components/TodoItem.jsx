@@ -16,7 +16,7 @@ onDelete={props.onDelete}
 />
       {/* <span   onClick={props.onDelete}     className="tareaterminada2">
         {" "}
-        <i class="fa-regular fa-trash-can"></i>
+        <i className="fa-regular fa-trash-can"></i>
       </span> */}
     </li>
   );
