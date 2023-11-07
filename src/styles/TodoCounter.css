@@ -53,6 +53,10 @@ body {
   color:white;
 
 }
+.divSintarea{
+  color: #d9e7da;
+  font-size: 2rem;
+}
 .tasks{
   text-decoration: line-through;
   text-decoration-color: rgb(220, 3, 24);

@@ -4,7 +4,7 @@ const TodosLoading = () => {
  
 
   return (
-    <p className="pload">Cargando Tareas.....</p>
+    <p className="pload"></p>
   );
 };
 
