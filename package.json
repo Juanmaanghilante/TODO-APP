@@ -1,6 +1,7 @@
 {
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
+  "homepage": "http:/Juanmaanghilante.github.io/TODO-APP ",
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
@@ -31,7 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://Juanmaanghilante.github.io/TODO-APP/build ",
+
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
